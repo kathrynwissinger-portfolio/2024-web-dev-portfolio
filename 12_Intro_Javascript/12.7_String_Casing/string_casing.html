@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>String Casing</title>
+    </head>
+    <body>
+        <script>
+            //changing string from uppercase to lowercase
+            var name = "kathryn";
+            console.log(name.toUpperCase());
+            console.log(name.toLowerCase());
+
+            //sliced first character of name variable
+            var firstChar = name.slice(0, 1);
+            console.log(firstChar);
+            
+            //uppercasing first character of name variable
+            firstChar = firstChar.toUpperCase();
+            console.log(firstChar);
+
+            //slice the remainder of name variable
+            var restOfName = name.slice(1, name.length);
+            console.log(restOfName);
+
+            //concatenating first char and rest of name 
+            var fullName = firstChar + restOfName;
+            console.log(fullName);  
+        </script>
+    </body>
+</html>

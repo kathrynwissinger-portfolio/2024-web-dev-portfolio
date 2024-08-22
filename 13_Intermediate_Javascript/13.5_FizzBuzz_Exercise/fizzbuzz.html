@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FizzBuzz Exercise</title>
+    </head>
+    <body>
+        <script>
+            //creating an array for fizzbuzzing
+            var fizzBuzzArray = [];
+
+            //
+            function fizzBuzz(number) {
+                //1. divisable by 3
+                //2. divisible by 5
+                //3. divisible by 3 & 5
+                //4. not divisible by either 3 or 5
+
+                //fizzbuzz using 4 if statements
+                if (number % 3 === 0) {
+                    console.log("Fizz");
+                }
+                if (number % 5 === 0) {
+                    console.log("Buzz");
+                }
+                if (number % 3 === 0 && number % 5 === 0) {
+                    console.log("FizzBuzz"); 
+                }
+                if (number % 3 !== 0 && number % 5 !== 0) {
+                    console.log(number);
+                }
+            }
+
+            //
+            console.log(fizzBuzz(1));
+            console.log(fizzBuzz(2));
+            console.log(fizzBuzz(3));
+            console.log(fizzBuzz(4));
+            console.log(fizzBuzz(5));
+            console.log(fizzBuzz(6));
+            console.log(fizzBuzz(7));
+            console.log(fizzBuzz(8));
+            console.log(fizzBuzz(9));
+            console.log(fizzBuzz(10));
+            console.log(fizzBuzz(11));
+            console.log(fizzBuzz(12));
+            console.log(fizzBuzz(13));
+            console.log(fizzBuzz(14));
+            console.log(fizzBuzz(15));
+
+            //----------------------------------------------------------------------------------------------------
+
+            //
+            function fizzBuzz_v2(number) {
+                if (number % 3 === 0 && number % 5 === 0) {
+                    console.log("FizzBuzz"); 
+                }
+                else if (number % 3 === 0) {
+                    console.log("Fizz");
+                }
+                else if (number % 5 === 0) {
+                    console.log("Buzz");
+                }
+                else { 
+                    console.log(number);
+                }
+            }
+
+            console.log(fizzBuzz_v2(1));
+            console.log(fizzBuzz_v2(2));
+            console.log(fizzBuzz_v2(3));
+            console.log(fizzBuzz_v2(4));
+            console.log(fizzBuzz_v2(5));
+            console.log(fizzBuzz_v2(6));
+            console.log(fizzBuzz_v2(7));
+            console.log(fizzBuzz_v2(8));
+            console.log(fizzBuzz_v2(9));
+            console.log(fizzBuzz_v2(10));
+            console.log(fizzBuzz_v2(11));
+            console.log(fizzBuzz_v2(12));
+            console.log(fizzBuzz_v2(13));
+            console.log(fizzBuzz_v2(14));
+            console.log(fizzBuzz_v2(15));
+
+        </script>
+    </body>
+</html>

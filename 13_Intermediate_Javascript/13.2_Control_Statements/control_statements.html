@@ -1,0 +1,87 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Control Statements</title>
+    </head>
+    <body>
+        <script>
+            //generating a random number
+            var randomNumber = Math.random();          
+            console.log(randomNumber);
+
+            //multiply by 100 
+            randomNumber = randomNumber * 100;
+            console.log(randomNumber);
+            
+            //takes the random number generated between (0-100) and rounds
+            randomNumber = Math.round(randomNumber);
+            console.log(randomNumber);
+
+            //control statement
+            if (randomNumber >= 51) {
+                console.log("This is a high number!");
+            }
+            if (randomNumber <= 50) {
+                console.log("This is a low number!");
+            }
+
+            //determining even and odd numbers
+            if (randomNumber % 2 === 0) {
+                console.log("this is an even number");
+            }
+            if (randomNumber % 2 === 1) {
+                console.log("this is an odd number");
+            }
+
+            //else statements
+            if (randomNumber >= 51) {
+                console.log("This is a high number!");
+            }
+            else {
+                console.log("This is a low number!");
+            }
+
+            //even and odd numbers using else statements
+            if (randomNumber % 2 === 0) {
+                console.log("this is an even number");
+            }
+            else {
+                console.log("this is an odd number");
+            }
+
+            //----------------------------------------------------------------------------------------------------
+
+            //generating random number between 1 and 5 
+            var randomNumber = Math.random();          
+            console.log(randomNumber);
+
+            //multiply by 5 
+            randomNumber = randomNumber * 5;
+            console.log(randomNumber);
+            
+            //takes the random number generated between (0-5) and rounds
+            randomNumber = Math.floor(randomNumber) + 1;
+            console.log(randomNumber);
+
+            //comparing random number against numbers in range 1-5
+            if (randomNumber === 1) {
+                console.log("this is number 1");
+            }
+            else if (randomNumber === 2) {
+                console.log("this is number 2");
+            }
+            else if (randomNumber === 3) {
+                console.log("this is number 3");
+            }
+            else if (randomNumber === 4) {
+                console.log("this is number 4");
+            }
+            else {
+                console.log("this is number 5");
+            }
+            
+        </script>
+    </body>
+ </html>

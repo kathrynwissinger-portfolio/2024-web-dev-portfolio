@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Arrays</title>
+    </head>
+    <body>
+        <script>
+            //creating an empty array
+            var emptyArray = [];
+            console.log(emptyArray);
+            console.log("the length of this array is " + emptyArray.length);
+
+            //pushing value to an array
+            var array_1 = [];
+            array_1.push(1);
+            console.log(array_1);
+            array_1.push(2);
+            console.log(array_1);
+            array_1.push(3);
+            console.log(array_1);
+            array_1.push(4);
+            console.log(array_1);
+            array_1.push(5);
+            console.log(array_1);
+
+            //popping value off an array
+            array_1.pop();
+            console.log(array_1);
+            
+            //indexing an array
+            console.log("array_1[0] : " + array_1[0]);
+            console.log("array_1[1] : " + array_1[1]);
+            console.log("array_1[2] : " + array_1[2]);
+            console.log("array_1[3] : " + array_1[3]);
+
+            //includes method 
+            console.log("the number " + 3 + " included : " + array_1.includes(3));
+            console.log("the number " + 5 + " included : " + array_1.includes(5));
+
+            //adding to an array by indexing
+            array_1[4] = 5;
+            console.log(array_1);
+            array_1[8] = 9;
+            console.log(array_1);
+            array_1[6] = 7;
+            console.log(array_1);
+            
+        </script>
+    </body>
+</html>

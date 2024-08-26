@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fibonacci Generator</title>
+    </head>
+    <body>
+        <script>
+            function fibonacciGenerator() {
+                var numberArray = [0, 1, 1, 2, 3];
+                
+                for (let i = 0; i < 5; i++) {
+                    numberArray.push(numberArray[numberArray.length - 1] + numberArray[numberArray.length - 2]);                    
+                }
+
+                console.log(numberArray);
+            }
+
+            fibonacciGenerator(); 
+        </script>
+    </body>
+</html>
